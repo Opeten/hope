@@ -11,4 +11,18 @@ commands:
   feed:
     description: Feeds player to max saturation
     usage: /<command>
-    aliases: [ feeding, feedme, feedmax, maxhunger]
+    aliases: [feeding, feedme, feedmax, maxhunger]
+
+  t:
+    description: Sets time to day, kills all mobs except players and clears weather
+    usage: /<command>
+    aliases: [day, ready, go]
+
+  farmtime:
+    description: Spawns a specified farm animal
+    usage: /<command> <animal> <amount>
+
+  fly:
+    description: enables player to fly
+    usage: /<command>
+

@@ -1,5 +1,6 @@
 package me.opeten.hope;
 
+import me.opeten.hope.commands.Fly;
 import me.opeten.hope.commands.HopeCommands;
 import me.opeten.hope.events.HopeEvents;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,6 +15,9 @@ public final class Hope extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new HopeEvents(),this);
         getCommand("heal").setExecutor(commands);
         getCommand("feed").setExecutor(commands);
+        getCommand("t").setExecutor(commands);
+        getCommand("farmtime").setExecutor(commands);
+        getCommand("fly").setExecutor(new Fly());
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[Hope]: Plugin is enabled!");
 
     }
