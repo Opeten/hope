@@ -1,0 +1,14 @@
+name: Hope
+version: '${project.version}'
+main: me.opeten.hope.Hope
+api-version: 1.19
+commands:
+  heal:
+    description: Heals player to max health
+    usage: /<command>
+    aliases: [healing, healme, healmax, maxhealth]
+
+  feed:
+    description: Feeds player to max saturation
+    usage: /<command>
+    aliases: [ feeding, feedme, feedmax, maxhunger]
