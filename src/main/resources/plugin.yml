@@ -7,22 +7,32 @@ commands:
     description: Heals player to max health
     usage: /<command>
     aliases: [healing, healme, healmax, maxhealth]
+    permission: hope.heal
 
   feed:
     description: Feeds player to max saturation
     usage: /<command>
     aliases: [feeding, feedme, feedmax, maxhunger]
+    permission: hope.feed
 
   t:
     description: Sets time to day, kills all mobs except players and clears weather
     usage: /<command>
-    aliases: [day, ready, go]
+    aliases: [day, ready, go, ]
+    permission: hope.t
 
   farmtime:
     description: Spawns a specified farm animal
     usage: /<command> <animal> <amount>
+    permission: hope.farmtime
 
   fly:
     description: enables player to fly
     usage: /<command>
+    permission: hope.fly
+
+  arrow:
+    description: multiply the amount of arrows on body by 10
+    usage: /<command>
+    permission: hope.arrowspawn
 
